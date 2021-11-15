@@ -1,0 +1,136 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{D638410D-08F3-4042-85CD-1A12F58C06D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{27A946BF-09D5-4B8D-B71F-BE4E6FCEACF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D2A70E84-194F-4531-AA81-82729A26F364}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserApp.WebApi", "src\Apps\UserApp.WebApi\UserApp.WebApi.csproj", "{D3933A39-0902-489D-9E20-4E75EA280B91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserApp.Application", "src\Common\UserApp.Application\UserApp.Application.csproj", "{D90A8ADE-6D79-421E-85E0-5E38C962434F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserApp.Domain", "src\Common\UserApp.Domain\UserApp.Domain.csproj", "{E52FB8CF-8F3B-4506-B8DD-0CD4DF6268A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserApp.Infrastructure", "src\Common\UserApp.Infrastructure\UserApp.Infrastructure.csproj", "{463C51FA-AC25-4CA4-B565-CA2296EF0CAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserApp.WebClient", "UserApp.WebClient", "{E048CD59-5A6D-42E6-BB9C-9AB182132681}"
+	ProjectSection(SolutionItems) = preProject
+		src\Apps\UserApp.WebClient\.gitignore = src\Apps\UserApp.WebClient\.gitignore
+		src\Apps\UserApp.WebClient\angular.json = src\Apps\UserApp.WebClient\angular.json
+		src\Apps\UserApp.WebClient\aspnetcore-https.js = src\Apps\UserApp.WebClient\aspnetcore-https.js
+		src\Apps\UserApp.WebClient\karma.conf.js = src\Apps\UserApp.WebClient\karma.conf.js
+		src\Apps\UserApp.WebClient\package.json = src\Apps\UserApp.WebClient\package.json
+		src\Apps\UserApp.WebClient\proxy.conf.js = src\Apps\UserApp.WebClient\proxy.conf.js
+		src\Apps\UserApp.WebClient\README.md = src\Apps\UserApp.WebClient\README.md
+		src\Apps\UserApp.WebClient\tsconfig.app.json = src\Apps\UserApp.WebClient\tsconfig.app.json
+		src\Apps\UserApp.WebClient\tsconfig.json = src\Apps\UserApp.WebClient\tsconfig.json
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\tsconfig.spec.json = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\tsconfig.spec.json
+		src\Apps\UserApp.WebClient\tsconfig.spec.json = src\Apps\UserApp.WebClient\tsconfig.spec.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1B2D1715-7BCB-4511-9539-36C69A54AEBC}"
+	ProjectSection(SolutionItems) = preProject
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\index.html = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\index.html
+		src\Apps\UserApp.WebClient\src\main.ts = src\Apps\UserApp.WebClient\src\main.ts
+		src\Apps\UserApp.WebClient\src\polyfills.ts = src\Apps\UserApp.WebClient\src\polyfills.ts
+		src\Apps\UserApp.WebClient\src\styles.css = src\Apps\UserApp.WebClient\src\styles.css
+		src\Apps\UserApp.WebClient\src\test.ts = src\Apps\UserApp.WebClient\src\test.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{3318094F-A68F-4D61-9EF7-E6C43DA72681}"
+	ProjectSection(SolutionItems) = preProject
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\app.component.html = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\app.component.html
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\app.component.ts = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\app.component.ts
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\app.module.ts = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\app.module.ts
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\app.server.module.ts = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\app.server.module.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{D6E67FB9-511A-436D-BE7E-5C96FCE749E2}"
+	ProjectSection(SolutionItems) = preProject
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\assets\.gitkeep = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\assets\.gitkeep
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "environments", "environments", "{EA9A703B-25CB-453A-80D1-F4D208523DFB}"
+	ProjectSection(SolutionItems) = preProject
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\environments\environment.prod.ts = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\environments\environment.prod.ts
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\environments\environment.ts = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\environments\environment.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "menu", "menu", "{45453E8B-D8E2-4448-B6B2-D370790EA4D2}"
+	ProjectSection(SolutionItems) = preProject
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\nav-menu\menu.component.css = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\nav-menu\menu.component.css
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\nav-menu\menu.component.html = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\nav-menu\menu.component.html
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\nav-menu\menu.component.ts = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\nav-menu\menu.component.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{360447F7-7FC2-4800-8B04-1883BB34CBF7}"
+	ProjectSection(SolutionItems) = preProject
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\shared\index.ts = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\shared\index.ts
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\shared\user.model.ts = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\shared\user.model.ts
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\shared\user.service.ts = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\shared\user.service.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "user", "user", "{84D297C4-2683-43E4-9FC8-B7ABDFC9E45D}"
+	ProjectSection(SolutionItems) = preProject
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\user\index.ts = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\user\index.ts
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\user\user.component.html = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\user\user.component.html
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\user\user.component.ts = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\user\user.component.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "child", "child", "{49AF2155-31E7-4FB5-8D19-261B651E7AC7}"
+	ProjectSection(SolutionItems) = preProject
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\user\shared\new-user.component.html = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\user\shared\new-user.component.html
+		..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\user\shared\new-user.component.ts = ..\angular-asp-dotnet-mvc-main\AngularDotnetMVC\AngularDotnetMVC\ClientApp\src\app\user\shared\new-user.component.ts
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3933A39-0902-489D-9E20-4E75EA280B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3933A39-0902-489D-9E20-4E75EA280B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3933A39-0902-489D-9E20-4E75EA280B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3933A39-0902-489D-9E20-4E75EA280B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D90A8ADE-6D79-421E-85E0-5E38C962434F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D90A8ADE-6D79-421E-85E0-5E38C962434F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D90A8ADE-6D79-421E-85E0-5E38C962434F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D90A8ADE-6D79-421E-85E0-5E38C962434F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E52FB8CF-8F3B-4506-B8DD-0CD4DF6268A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E52FB8CF-8F3B-4506-B8DD-0CD4DF6268A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E52FB8CF-8F3B-4506-B8DD-0CD4DF6268A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E52FB8CF-8F3B-4506-B8DD-0CD4DF6268A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{463C51FA-AC25-4CA4-B565-CA2296EF0CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{463C51FA-AC25-4CA4-B565-CA2296EF0CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{463C51FA-AC25-4CA4-B565-CA2296EF0CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{463C51FA-AC25-4CA4-B565-CA2296EF0CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D638410D-08F3-4042-85CD-1A12F58C06D8} = {D2A70E84-194F-4531-AA81-82729A26F364}
+		{27A946BF-09D5-4B8D-B71F-BE4E6FCEACF0} = {D2A70E84-194F-4531-AA81-82729A26F364}
+		{D3933A39-0902-489D-9E20-4E75EA280B91} = {D638410D-08F3-4042-85CD-1A12F58C06D8}
+		{D90A8ADE-6D79-421E-85E0-5E38C962434F} = {27A946BF-09D5-4B8D-B71F-BE4E6FCEACF0}
+		{E52FB8CF-8F3B-4506-B8DD-0CD4DF6268A7} = {27A946BF-09D5-4B8D-B71F-BE4E6FCEACF0}
+		{463C51FA-AC25-4CA4-B565-CA2296EF0CAC} = {27A946BF-09D5-4B8D-B71F-BE4E6FCEACF0}
+		{E048CD59-5A6D-42E6-BB9C-9AB182132681} = {D638410D-08F3-4042-85CD-1A12F58C06D8}
+		{1B2D1715-7BCB-4511-9539-36C69A54AEBC} = {E048CD59-5A6D-42E6-BB9C-9AB182132681}
+		{3318094F-A68F-4D61-9EF7-E6C43DA72681} = {1B2D1715-7BCB-4511-9539-36C69A54AEBC}
+		{D6E67FB9-511A-436D-BE7E-5C96FCE749E2} = {1B2D1715-7BCB-4511-9539-36C69A54AEBC}
+		{EA9A703B-25CB-453A-80D1-F4D208523DFB} = {1B2D1715-7BCB-4511-9539-36C69A54AEBC}
+		{45453E8B-D8E2-4448-B6B2-D370790EA4D2} = {3318094F-A68F-4D61-9EF7-E6C43DA72681}
+		{360447F7-7FC2-4800-8B04-1883BB34CBF7} = {3318094F-A68F-4D61-9EF7-E6C43DA72681}
+		{84D297C4-2683-43E4-9FC8-B7ABDFC9E45D} = {3318094F-A68F-4D61-9EF7-E6C43DA72681}
+		{49AF2155-31E7-4FB5-8D19-261B651E7AC7} = {84D297C4-2683-43E4-9FC8-B7ABDFC9E45D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35E1D188-84DC-4673-B815-9E76A22A070C}
+	EndGlobalSection
+EndGlobal
