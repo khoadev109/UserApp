@@ -46,6 +46,7 @@ For example, to add a new migration from the root folder:
 
 ## Note
 
-Following Clean Architecture source code here: https://www.nuget.org/packages/Matech.Clean.Architecture.Template
+- Following Clean Architecture source code here: https://www.nuget.org/packages/Matech.Clean.Architecture.Template
+- No testing in both front-end and back-end provided cause it's running out of time
 
 
