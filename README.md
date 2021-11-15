@@ -1,30 +1,21 @@
-﻿ # Clean Architecture Template
-![.NET Core](https://github.com/iayti/CleanArchitecture/workflows/.NET%20Core/badge.svg) [![Matech.Clean.Architecture.Template NuGet Package](https://img.shields.io/badge/nuget-1.1.4-blue)](https://www.nuget.org/packages/Matech.Clean.Architecture.Template) [![NuGet](https://img.shields.io/nuget/dt/Matech.Clean.Architecture.Template.svg)](https://www.nuget.org/packages/Matech.Clean.Architecture.Template)
-
-This is a solution template for creating a ASP.NET Core Web API following the principles of Clean Architecture. Create a new project based on this template by clicking the above **Use this template** button or by installing and running the associated NuGet package (see Getting Started for full details). 
-
+﻿ # User App
 
 ## Technologies
-* [ASP.NET Core 6](https://docs.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0)
-* [Entity Framework Core 6](https://docs.microsoft.com/en-us/ef/core/)
-* [MediatR](https://github.com/jbogard/MediatR)
-* [Mapster](https://github.com/MapsterMapper/Mapster)
-* [FluentValidation](https://fluentvalidation.net/)
-* [NUnit](https://nunit.org/), [FluentAssertions](https://fluentassertions.com/), [Moq](https://github.com/moq) & [Respawn](https://github.com/jbogard/Respawn)
-* [Elasticsearch](https://www.elastic.co/), [Serilog](https://serilog.net/), [Kibana](https://www.elastic.co/kibana)
-* [Docker](https://www.docker.com/)
+* ASP.NET Core 6
+* Entity Framework Core 6
+* MediatR
+* FluentValidation
+
+## Design Patterns
+* Dependency Injection
+* Mediator
 
 ## Getting Started
 
 Install the [NuGet package](https://www.nuget.org/packages/Matech.Clean.Architecture.Template) and run `dotnet new cas`:
 
-1. Install the latest [.NET SDK](https://dotnet.microsoft.com/download)
-2. Run `dotnet new --install Matech.Clean.Architecture.Template` to install the project template
-3. Create a folder for your solution and cd into it (the template will use it as project name)
-4. Run `dotnet new cas` to create a new project
-5. Navigate to `src/Apps/CleanArchitecture.Api` and run `dotnet run` to launch the back end (ASP.NET Core Web API)
-6. Open web browser https://localhost:5021/api Swagger UI
-
+1. Change value of key "File/Directory" in appsettings.json to absolute path in local
+2. Run UserApp.WebAPI project and open web browser https://localhost:5021/api Swagger UI
 
 ### Database Configuration
 
@@ -44,60 +35,17 @@ When you run the application the database will be automatically created (if nece
 
 To use `dotnet-ef` for your migrations please add the following flags to your command (values assume you are executing from repository root)
 
-* `--project src/Common/CleanArchitecture.Infrastructure` (optional if in this folder)
-* `--startup-project src/Apps/CleanArchitecture.Api`
+* `--startup-project src/Apps/UserApp.WebApi`
 * `--output-dir Persistence/Migrations`
 
 For example, to add a new migration from the root folder:
 
- `dotnet ef migrations add "CreateDb" --project src\Common\CleanArchitecture.Infrastructure --startup-project src\Apps\CleanArchitecture.Api --output-dir Persistence\Migrations`
+ `dotnet ef migrations add "InitialCreate" --project src\Common\UserApp.Infrastructure --startup-project src\Apps\UserApp.WebApi --output-dir Persistence\Migrations`
 
- `dotnet ef database update --project src\Common\CleanArchitecture.Infrastructure --startup-project src\Apps\WebApi`
+ `dotnet ef database update --project src\Common\UserApp.Infrastructure --startup-project src\Apps\UserApp.WebApi`
 
-## Overview
+## Note
 
-### Domain
+Following Clean Architecture source code here: https://www.nuget.org/packages/Matech.Clean.Architecture.Template
 
-This will contain all entities, enums, exceptions, interfaces, types and logic specific to the domain layer.
-
-### Application
-
-This layer contains all application logic. It is dependent on the domain layer, but has no dependencies on any other layer or project. This layer defines interfaces that are implemented by outside layers. For example, if the application need to access a notification service, a new interface would be added to application and an implementation would be created within infrastructure.
-
-### Infrastructure
-
-This layer contains classes for accessing external resources such as file systems, web services, smtp, and so on. These classes should be based on interfaces defined within the application layer.
-
-### WebApi
-
-This layer is a web api application based on ASP.NET 6.0.x. This layer depends on both the Application and Infrastructure layers, however, the dependency on Infrastructure is only to support dependency injection. Therefore only *Startup.cs* should reference Infrastructure.
-
-### Logs
-
-Logging into Elasticsearch using Serilog and viewing logs in Kibana.
-
-#### Prerequisites
-
-* Download and Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
-
-Open CLI in the project folder and run the below comment. 
-
-```powershell
-PS CleanArchitecture> docker-compose up
-```
-`docker-compose.yml` pull and run the ElasticSearch and Kibana images.
-
-If you are running first time Windows 10 [WSL 2 (Windows Subsystem for Linux)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) Linux Container for Docker, You will probably get the following error from the docker.
-
-`Error:` max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
-
-`Solution:` Open the Linux WSL 2 terminal `sudo sysctl -w vm.max_map_count=262144` and change the virtual memory for Linux.
-
-## Support
-
-If you are having problems, please let us know by [raising a new issue](https://github.com/iayti/CleanArchitecture/issues/new/choose).
-
-## License
-
-This project is licensed with the [MIT license](LICENSE).
 
