@@ -14,7 +14,7 @@
 
 Install the [NuGet package](https://www.nuget.org/packages/Matech.Clean.Architecture.Template) and run `dotnet new cas`:
 
-1. Change value of key "File/Directory" in appsettings.json to absolute path in local
+1. Change value of **File/Directory** in **appsettings.json** to absolute path in local folder
 2. Run UserApp.WebAPI project and open web browser https://localhost:5021/api Swagger UI
 
 ### Database Configuration
